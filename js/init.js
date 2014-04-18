@@ -1,3 +1,3 @@
-globe.onDefine('window.jQuery && $("#gf").length', function() {
-	globe.graphic();
+globe.onDefine('window.jQuery && $("#gf-winners").length', function() {
+	globe.graphicWinners();
 });

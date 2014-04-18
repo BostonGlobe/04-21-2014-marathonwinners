@@ -1,0 +1,83 @@
+#gf-winners {
+
+	width: 100%;
+	overflow: hidden;
+
+	p {
+		@include rhythm(0, 0, 0, 0);
+	}
+
+	.subhed {
+		@include adjust-font-size-to(28px);
+		@include rhythm(0, 0, 0, 1/3);
+		text-align: center;
+	}
+
+	&.wide {
+
+		li {
+			float: left;
+
+			&:last-child {
+				float: left;
+			}
+
+		}
+
+		ul {
+			width: 50%;
+			float: left;
+			@include rhythm(0, 0, 0, 0);
+		}
+
+	}
+
+	ul {
+
+		width: 100%;
+		overflow: hidden;
+		@include rhythm(0, 0, 0, 1.5);
+
+		li {
+
+			text-align: center;
+
+			float: left;
+			width: 50%;
+
+			@include rhythm(0, 0, 0, 0);
+
+			&:last-child {
+				float: right;
+			}
+
+			img {
+
+				width: 90px;
+				vertical-align: bottom;
+			}
+
+			.category {
+				@include adjust-font-size-to(20px, 1);
+				@include rhythm(0, 1/4, 0, 0);
+				font-style: italic;
+			}
+
+			.winner {
+				@include adjust-font-size-to(20px, 1);
+				font-weight: bold;
+			}
+
+			.time {
+				@include adjust-font-size-to(20px, 1);
+			}
+
+		}
+
+		&:last-child {
+			@include rhythm(0, 0, 0, 0);
+		}
+
+	}
+
+}
