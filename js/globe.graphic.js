@@ -2,7 +2,7 @@ globe.graphicWinners = function() {
 
 	function resize() {
 
-		var container = $('#gf-winners')
+		var container = $('#gf-winners');
 
 		if (container.width() < 480) {
 			container.removeClass('wide');
